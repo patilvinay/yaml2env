@@ -1,11 +1,3 @@
-# yaml2env
-
-## How to use
-
-export $(yaml2env config.yaml)
-
-## Example format of a yaml file
-```yaml
 ---
 env:
 
@@ -14,4 +6,3 @@ env:
   PROJECT_NAME: 'test project'
   IMAGE_BASE_URL: 'https://example.com/'
 
-``` 

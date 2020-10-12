@@ -1,4 +1,14 @@
 #!/usr/bin/env python
 
-print("This is the pip package")
-
+import yaml
+import sys
+if __name__ == '__main__':
+    try:
+        file= str(sys.argv[1]);
+        stream = open(file, 'r')
+        dictionary = yaml.load(stream)
+        env= dictionary['env']
+        for key, value in env.items():
+             print (key + "=" +  str(value))
+    except:
+        pass;
